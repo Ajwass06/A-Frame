@@ -6,10 +6,7 @@
 </head>
 <body>
 	<a-scene>
-		<a-assets>
-			<audio id="song" src="song.mp3"></audio>
-		</a-assets>
-		<a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="4" color="#95CF3C" sound="src: #song; autoplay: true; volume: 0.9"></a-plane>
+		<a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="4" color="#95CF3C"></a-plane>
 		<a-sky color="#EAEC23"></a-sky>
 		<a-cylinder position="-5 1.5 -3" radius="0.5" height="1.5" color="red" animation="property: position; from: -5 1.5 -3; to: -5 2 -3; dur: 500; easing: linear; loop: true; dir: alternate">
 			<a-ring position="0 1.4 0" radius-inner="0" radius-outer="0.5" color="red"></a-ring>
@@ -71,7 +68,7 @@
         		<a-box position="0.55 -0.33 0" width="0.1" height="0.64" depth="0.1" color="black" rotation="0 0 180" animation="property: position; from: 0.55 -0.5 0; to: 0.55 0.4 0; dur: 500; easing: linear; loop: true; dir: alternate"></a-box>
         	</a-cylinder>
 		</a-cylinder>
-		<a-sound src="src: url(Song.mp3)" autoplay="true" position="0 2 5"></a-sound>
+		<a-sound src="src: song.mp3" autoplay="true" position="0 2 5"></a-sound>
 	</a-scene>
 </body>
 </html>
